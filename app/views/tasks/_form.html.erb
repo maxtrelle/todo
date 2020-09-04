@@ -1,5 +1,5 @@
 <%= simple_form_for @task do |f| %>
-  <%= f.input :title, placeholder: "Enter your task..." %>
+  <%= f.input :title, required: true, placeholder: "Enter your task..." %>
   <%= f.input :priority, collection: Task::PRIORITIES, selected: 3 %>
   <%= f.input :completed, as: :boolean %>
   <%= f.button :submit, class: 'btn btn-lg btn-primary' %>

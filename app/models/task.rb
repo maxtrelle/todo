@@ -1,4 +1,6 @@
 class Task < ApplicationRecord
+  validates :title, presence: true 
+
   PRIORITIES = [
     ['Later', 1],
     ['Next', 2],
