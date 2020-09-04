@@ -1,0 +1,17 @@
+<%= render "layouts/header" %>
+
+<h2 class="my-5">My Task</h2>
+
+<div class="row my-4">
+  <% @tasks.each do |task| %>
+    <%= render partial: 'task', object: task %>
+  <% end %>
+</div>
+
+<h2 class="my-5">Completed task</h2>
+
+<div class="row my-4">
+  <% @completed_task.each do |task| %>
+    <%= render partial: 'task', object: task %>
+  <% end %>
+</div>

@@ -1,2 +1,37 @@
 @import "~bootstrap/scss/bootstrap";
 @import '@fortawesome/fontawesome-free';
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  background-color: #165A99;
+  color: #f2f2f2;
+}
+
+.bg-dark-blue {background-color: #183153;}
+.navbar-color-white a {color: #c3c6d1;}
+.navbar-color-white a:hover {color: #ffd43b;}
+a.navbar-brand {font-weight: bold;}
+
+.jumbotron {background-color: transparent; color: #f8f9fa;}
+.transition-3d-hover {transition: all 0.3s ease-in-out;}
+.transition-3d-hover:hover, .transition-3d-hover:focus {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+.task {
+  .action {opacity: 0; color: #E0E0E0; font-size: 1.5rem;}
+
+  &:hover .action {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+}
+
+.priority_1 {background-color: #4CAF50; color: #f2f2f2;}
+.priority_2 {background-color: #FF9800; color: #f2f2f2;}
+.priority_3 {background-color: #f44336; color: #f2f2f2;}
+
+.completed_true {background-color: #607D8B; color: #ccc; text-decoration: line-through;}
+.completed_true .done {display: none;}

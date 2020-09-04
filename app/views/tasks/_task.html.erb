@@ -1,0 +1,14 @@
+<div class="col-md-4">
+  <div class="card h-100 transition-3d-hover task priority_<%= task.priority %> completed_<%= task.completed %> mb-4">
+    <div class="card-body">
+      <p class="card-title h4"><%= task.title %></p>
+    </div>
+    <div class="card-footer">
+      <span class="d-flex justify-content-around align-items-center">
+        <%= link_to content_tag('span', '', class: 'fas fa-check'), complete_task_path(task), data: {method: :put}, class: 'done action' %>
+        <%= link_to content_tag('span', '', class: 'fas fa-pen'), edit_task_path(task), class: 'action' %>
+        <%= link_to content_tag('span', '', class: 'fas fa-trash'), task, method: :delete, class: 'action' %>
+      </span>
+    </div>
+  </div>
+</div>
